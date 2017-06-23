@@ -5,13 +5,13 @@
 1. Clonar repositorio
 
 ```
-$ git clone git@git.exactas.uba.ar:tleng/calculadora-esqueleto.git
+$ git clone git@github.com:tleng-dc/calculadora.git
 ```
 
 2. Instalar dependencias
 
 ```
-$ pip install -r requirements.txt
+$ pip install -r --user requirements.txt
 ```
 
 3. Correr consola
@@ -19,3 +19,7 @@ $ pip install -r requirements.txt
 ```
 $ python main.py
 ```
+
+# Taller 
+
+En el branch `master` está el taller resuelto. Si queremos empezar el taller desde cero, hacer `git checkout taller`
