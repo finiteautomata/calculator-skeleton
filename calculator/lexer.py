@@ -23,10 +23,20 @@ muestra aquí abajo.
 tokens = (
     'NUMBER',
     'PLUS',
+    'TIMES',
+    'MINUS',
 )
 
 t_PLUS = r'\+'
-t_NUMBER =  r'\d+'
+t_TIMES = r'\*'
+t_MINUS = r'\-'
+t_ignore = ' \t'
+
+
+def t_NUMBER(t):
+    r'\d+'
+    t.value = int(t.value)
+    return t
 
 
 # Build the lexer
